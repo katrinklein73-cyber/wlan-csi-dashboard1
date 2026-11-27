@@ -1,7 +1,7 @@
 {
   "name": "Wetterstudio – Ultimate Edition",
   "short_name": "Wetterstudio",
-  "description": "Wetterstudio für Çolaklı und Groß-Gerau",
+  "description": "Wetterstudio für Çolaklı und einen frei wählbaren deutschen Standort",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

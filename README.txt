@@ -1,16 +1,8 @@
-Wetterstudio – Version 13 (Zwei Standorte)
+WETTERSTUDIO – ULTIMATE EDITION VERSION 14
 
-Neu in Version 13:
-- Standortumschaltung zwischen Çolaklı (Manavgat, Türkiye) und Groß-Gerau (Hessen, Deutschland).
-- Wetter-, Stunden- und 7-Tage-Vorhersage werden für den ausgewählten Standort geladen.
-- Ortszeit und Wetterwarnungs-Link wechseln passend zum Standort (MGM bzw. DWD).
-- Meer-/Wellenwerte werden nur für den Küstenstandort Çolaklı angezeigt; für Groß-Gerau sind sie als nicht verfügbar markiert.
-- Bestehende Wettermoderator-Animationen, Luftqualität, Wetterdiagramm und PWA-Funktionen bleiben erhalten.
+Standorte: Çolaklı (Türkei) und Groß-Gerau (Deutschland).
+Enthält: Live-Wetter, Stunden- und 7-Tage-Prognose, Luftqualität, Meer-/Wellenwerte für Çolaklı, Wettermoderator mit sechs Wetterstimmungen, Teststudio, Strand-Checker (Orientierungswert), Wetter-TV, Wetterwarn-Schwellen, Tag-/Nachtmodus, Wetter-Rückblick und Design-Einstellungen.
 
-Installation:
-1. Alle Dateien aus diesem Ordner direkt in das Hauptverzeichnis des GitHub-Repositorys hochladen.
-2. Vorhandene Dateien ersetzen und neue Dateien hinzufügen.
-3. Commit changes ausführen.
-4. Die PWA vollständig schließen und erneut öffnen bzw. die Website neu laden.
+Installation: Alle Dateien in das Hauptverzeichnis des GitHub-Pages-Repositories hochladen und vorhandene gleichnamige Dateien ersetzen. Danach Commit changes.
 
-Hinweis: Die Wetterdaten stammen aus Open-Meteo-Modellen. Der zweite Standort ist fest auf Groß-Gerau voreingestellt; die Umschaltung erfolgt über die beiden Standort-Schaltflächen.
+Datenquellen: Open-Meteo Forecast, Marine und Air Quality. Prognosewerte sind modelliert; automatische Schwellenwerte sind keine amtlichen Warnungen.

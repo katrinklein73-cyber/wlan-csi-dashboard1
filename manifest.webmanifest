@@ -1,18 +1,11 @@
 {
-  "name": "Wetterstudio – zwei Standorte",
+  "name": "Wetterstudio – Ultimate Edition",
   "short_name": "Wetterstudio",
+  "description": "Wetterstudio für Çolaklı und Groß-Gerau",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#061226",
   "theme_color": "#07152d",
-  "description": "Das Wetterstudio für Çolaklı in der Türkei und Groß-Gerau in Deutschland.",
-  "icons": [
-    {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }

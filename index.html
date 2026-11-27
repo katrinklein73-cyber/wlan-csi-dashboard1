@@ -115,7 +115,7 @@ async function load(){
  set("sunrise",time(d.sunrise[0]));set("sunset",time(d.sunset[0]));const mins=Math.round(d.daylight_duration[0]/60);set("daylength",Math.floor(mins/60)+" h "+mins%60+" min");set("uvmax",val(d.uv_index_max[0],1));
  set("comfort",t>=30?"Hitzebelastung":t<=8?"Kälteempfinden":"Meist angenehm");set("cape",val(h.cape[i],0));set("elevation",val(w.elevation,0)+" m");
  const mood=code>=95?"storm":((code>=51&&code<=67)||(code>=80&&code<=82))?"rain":(code>=71&&code<=86)?"cloud":(c.wind_speed_10m>=30||c.wind_gusts_10m>=45)?"wind":t>=30?"hot":t<=10?"cold":(code===0||code===1)?"sun":"cloud";
- const moodImages={sun:"host-sun-animated.gif",cloud:"host-cloud.png",rain:"host-rain.png",wind:"host-wind.png",storm:"host-storm.png",hot:"host-hot.png",cold:"host-cloud.png"};
+ const moodImages={sun:"host-sun-animated.gif",cloud:"host-cloud-animated.gif",rain:"host-rain-animated.gif",wind:"host-wind-animated.gif",storm:"host-storm-animated.gif",hot:"host-hot-animated.gif",cold:"host-cloud-animated.gif"};
  const host=$("host");const nextImage=moodImages[mood]||moodImages.cloud;
  if(!host.src.endsWith("/"+nextImage)){host.style.opacity="0.15";setTimeout(()=>{host.src=nextImage;host.alt="Wettermoderator von Çolaklı – "+({sun:"fröhlich bei Sonne",cloud:"neugierig bei Wolken",rain:"traurig im Regen",wind:"überrascht bei Wind",storm:"erschrocken bei Gewitter",hot:"erschöpft bei Hitze",cold:"fröstelnd bei Kälte"}[mood]||"aktuelle Wetterlage");host.onload=()=>{host.style.opacity="1"}},180)}
  $("hostwrap").dataset.mood=mood;

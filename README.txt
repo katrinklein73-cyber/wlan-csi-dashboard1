@@ -10,3 +10,6 @@ Hinweise: Radar öffnet einen externen Dienst. Luftqualität und Pollen sind mod
 Installation: Dateien ins Hauptverzeichnis des GitHub-Pages-Repositories laden und gleichnamige Dateien ersetzen.
 
 Version 19: Standortauswahl ist direkt auf der Hauptseite unter der Reiterleiste verfügbar. Der Reiter Vergleich ist für den Wettervergleich reserviert. Service-Worker-Cache auf v19 erhöht.
+
+
+Version 20: Zwei kompakte Wetterkarten zeigen Çolaklı und den frei wählbaren deutschen Standort gleichzeitig auf der Startseite, inklusive lokaler Uhrzeit, Temperatur, Wetterlage und Wind. Die Karten-Schaltflächen wechseln zur Detailansicht des jeweiligen Orts. Tägliche Begrüßung mit wechselnden Sprüchen erscheint beim ersten Öffnen pro lokalem Kalendertag und kann geschlossen werden. Bestehende Funktionen und Standortwahl bleiben erhalten.

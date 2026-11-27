@@ -1,12 +1,12 @@
 {
-  "name": "Wetterstudio Çolaklı",
+  "name": "Wetterstudio – zwei Standorte",
   "short_name": "Wetterstudio",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#061226",
   "theme_color": "#07152d",
-  "description": "Das verrückte lokale Wetterstudio für Çolaklı am Mittelmeer.",
+  "description": "Das Wetterstudio für Çolaklı in der Türkei und Groß-Gerau in Deutschland.",
   "icons": [
     {
       "src": "icon.svg",

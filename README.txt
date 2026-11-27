@@ -25,3 +25,12 @@ VERSION 23 (27.11.2026)
 - Service-Worker-Cache auf v23 aktualisiert.
 
 Version 24: Umbenennung in Katrin's Wetterstudio mit elegantem Markenbanner.
+
+
+Version 25: Stundenticker nutzt jetzt die stündlichen Open-Meteo-Tag/Nacht-Werte (is_day), damit nachts keine Sonnensymbole mehr erscheinen. Service-Worker-Cache auf v25 aktualisiert.
+
+
+Version 26: Nacht-Symbole robust korrigiert. Der Tagesstatus wird numerisch ausgewertet; nachts erscheinen Mond-/Mond-Wolken-Symbole. Service-Worker-Cache aktualisiert.
+
+
+Version 27 (27.11.2026): In Einstellungen ganz unten wurde der Bereich 'Über Katrin's Wetterstudio' mit sichtbarer Programmversion und letztem Update ergänzt. Service-Worker-Cache auf v27 aktualisiert.

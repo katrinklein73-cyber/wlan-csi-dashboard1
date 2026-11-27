@@ -16,3 +16,10 @@ Version 20: Zwei kompakte Wetterkarten zeigen Çolaklı und den frei wählbaren 
 
 
 Version 21: Design-Farbwelten Sonnenuntergang und Waldgrün greifen jetzt sichtbar auf Hintergrund, Kopfbereich, Karten, Standortfelder, Tabs und Detailflächen. Cache-Version auf v21 erhöht.
+
+
+VERSION 23 (27.11.2026)
+- Interaktive Regenkarte vollständig entfernt.
+- Zwei zusätzliche Design-Farbwelten: Lavendel und Mitternachtsblau.
+- Wetterfrosch-Gedächtnis sichtbar auf der Startseite: letztes besonderes Wetterereignis und Datum.
+- Service-Worker-Cache auf v23 aktualisiert.

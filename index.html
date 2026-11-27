@@ -33,6 +33,26 @@ header:after{content:"";position:absolute;right:8%;top:-75px;width:240px;height:
 .tabpanel[hidden]{display:none!important}.tabhint{color:var(--muted);font-size:12px;margin:-3px 0 12px}
 @media(max-width:600px){.location-pair{gap:8px}.location-tile{padding:10px}.location-tile .tile-top{font-size:11px}.location-tile .tile-condition{font-size:12px}.tabbar{margin-left:-4px;margin-right:-4px}.tabbtn{padding:9px 12px;font-size:13px}}
 
+
+/* Version 21: Design-Farbwelten wirken sichtbar auf alle App-Flächen */
+body.theme-sunset{background:radial-gradient(ellipse at 12% 0%,#6b3444 0,transparent 40%),radial-gradient(ellipse at 95% 12%,#70402f 0,transparent 32%),#24162a!important}
+body.theme-sunset header{background:linear-gradient(110deg,#3b1c31,#71394a 55%,#8a503d)!important;border-color:#ffad83}
+body.theme-sunset .tabbar{background:linear-gradient(180deg,#24162af5,#24162ae8)}
+body.theme-sunset .tabbtn{background:#4b293e;border-color:#a85d68;color:#fff0e8}
+body.theme-sunset .tabbtn[aria-selected="true"],body.theme-sunset .btn{background:linear-gradient(120deg,#a94d61,#85434f)!important;border-color:#ffad83!important}
+body.theme-sunset .card,body.theme-sunset .hero,body.theme-sunset .presenter,body.theme-sunset .location-tile,body.theme-sunset .modalbox,body.theme-sunset .greeting-box{background:linear-gradient(145deg,#63374b,#38263c)!important;border-color:#a85d68!important}
+body.theme-sunset .metric,body.theme-sunset .hour,body.theme-sunset .day,body.theme-sunset .airbox,body.theme-sunset .detailitem,body.theme-sunset .chart{background:#321f35!important;border-color:#875064!important}
+body.theme-sunset .card h2,body.theme-sunset .modalhead h2{color:#ffc1a2!important}
+body.theme-forest{background:radial-gradient(ellipse at 12% 0%,#205b45 0,transparent 40%),radial-gradient(ellipse at 95% 12%,#315b3e 0,transparent 32%),#071d1a!important}
+body.theme-forest header{background:linear-gradient(110deg,#092b25,#15513e 55%,#244a37)!important;border-color:#70e0b0}
+body.theme-forest .tabbar{background:linear-gradient(180deg,#071d1af5,#071d1ae8)}
+body.theme-forest .tabbtn{background:#10372e;border-color:#32765c;color:#e6fff2}
+body.theme-forest .tabbtn[aria-selected="true"],body.theme-forest .btn{background:linear-gradient(120deg,#17684f,#205d48)!important;border-color:#70e0b0!important}
+body.theme-forest .card,body.theme-forest .hero,body.theme-forest .presenter,body.theme-forest .location-tile,body.theme-forest .modalbox,body.theme-forest .greeting-box{background:linear-gradient(145deg,#174b3b,#0d3029)!important;border-color:#32765c!important}
+body.theme-forest .metric,body.theme-forest .hour,body.theme-forest .day,body.theme-forest .airbox,body.theme-forest .detailitem,body.theme-forest .chart{background:#092820!important;border-color:#28654f!important}
+body.theme-forest .card h2,body.theme-forest .modalhead h2{color:#a7f3cf!important}
+body.theme-sunset .location-tile .tile-top,body.theme-forest .location-tile .tile-top{color:var(--text)}
+
 </style>
 </head>
 <body>

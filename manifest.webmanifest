@@ -1,7 +1,7 @@
 {
-  "name": "Wetterstudio Çolaklı – Wetter & Meer",
-  "short_name": "Wetterstudio",
-  "description": "Wetterstudio für Çolaklı und einen frei wählbaren deutschen Standort",
+  "name": "Katrin's Wetterstudio – Wetter & Meer",
+  "short_name": "Katrin's",
+  "description": "Katrin's persönliches Wetterstudio für Çolaklı und einen frei wählbaren deutschen Standort",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

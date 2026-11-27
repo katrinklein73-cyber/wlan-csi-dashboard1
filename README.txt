@@ -23,3 +23,5 @@ VERSION 23 (27.11.2026)
 - Zwei zusätzliche Design-Farbwelten: Lavendel und Mitternachtsblau.
 - Wetterfrosch-Gedächtnis sichtbar auf der Startseite: letztes besonderes Wetterereignis und Datum.
 - Service-Worker-Cache auf v23 aktualisiert.
+
+Version 24: Umbenennung in Katrin's Wetterstudio mit elegantem Markenbanner.

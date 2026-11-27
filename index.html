@@ -7,12 +7,11 @@
 <meta name="description" content="Das verrückte Wetterstudio Çolaklı – lokales Wetter, Mittelmeer, Wind und Vorhersage.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<title>Wetterstudio Çolaklı</title>
+<title>Katrin's Wetterstudio</title>
 <style>
 :root{color-scheme:dark;--bg:#061226;--panel:#0c2141;--panel2:#102b50;--line:#1c5d91;--cyan:#35d9ff;--gold:#ffc857;--text:#eef8ff;--muted:#a7bfd6;--pink:#ff6e9e;--green:#6ee7b7}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#153e67 0,transparent 36%),radial-gradient(ellipse at 95% 15%,#3c235c 0,transparent 28%),var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-header{padding:18px max(16px,calc((100vw - 1250px)/2));background:linear-gradient(110deg,#07152d,#102e55 55%,#241d49);border-bottom:2px solid var(--cyan);position:relative;overflow:hidden}
-header:after{content:"";position:absolute;right:8%;top:-75px;width:240px;height:240px;border:1px solid #2a9acb;border-radius:50%;box-shadow:0 0 0 22px #1c5d9122,0 0 0 48px #1c5d9115}
+header{padding:0 0 10px;background:linear-gradient(110deg,#07152d,#102e55 55%,#241d49);border-bottom:2px solid var(--gold);position:relative;overflow:hidden}.brand-banner{display:block;width:100%;height:clamp(128px,22vw,218px);object-fit:cover;object-position:center 50%;background:#07152d}.topline{padding:0 16px;max-width:1250px;margin:8px auto 0}
 .brand{display:flex;align-items:center;gap:13px;position:relative;z-index:1}.logo{font-size:38px;filter:drop-shadow(0 0 12px #35d9ff)}h1{font-size:clamp(23px,4vw,36px);line-height:1;margin:0;letter-spacing:.02em}.sub{color:#b9eaff;margin-top:6px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
 .locationbar{margin-bottom:14px}.locationbtn.active{background:linear-gradient(120deg,#087eaa,#155b87);border-color:#65e3ff;box-shadow:0 0 0 2px #35d9ff33}.topline{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:13px}.live{background:#b4234c;color:white;border-radius:30px;padding:4px 10px;font-weight:800;letter-spacing:.1em}.wrap{max-width:1250px;margin:auto;padding:18px 16px 36px}
 .presenter{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;background:linear-gradient(120deg,#152d4c,#102342);border:1px solid #285d86;border-radius:18px;padding:12px 18px;margin-bottom:16px;box-shadow:0 12px 34px #0003;overflow:hidden}
@@ -76,7 +75,7 @@ body.theme-sunset .location-tile .tile-top,body.theme-forest .location-tile .til
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="logo">🌪️</div><div><h1>WETTERSTUDIO</h1><div class="sub">Zwei Standorte · ein Wetterstudio</div></div></div><div class="topline"><span class="live">● LIVE-MODELLDATEN</span><span id="clock">Lokale Zeit wird geladen …</span><span id="headerPlace">📍 Çolaklı · Manavgat · Türkiye</span></div></header>
+<header><img class="brand-banner" src="katrins-wetterstudio-banner.jpg" alt="Katrin's Wetterstudio – Çolaklı, Manavgat, Türkiye"><div class="topline"><span class="live">● LIVE-MODELLDATEN</span><span id="clock">Lokale Zeit wird geladen …</span><span id="headerPlace">📍 Çolaklı · Manavgat · Türkiye</span></div></header>
 <nav class="tabbar" role="tablist" aria-label="Wetterstudio Bereiche">
 <button class="tabbtn" type="button" role="tab" data-tab="overview" aria-selected="true">🏠 Übersicht</button>
 <button class="tabbtn" type="button" role="tab" data-tab="weather" aria-selected="false">🌤️ Wetter</button>
@@ -151,7 +150,7 @@ function chooseLocation(key){
  $("locColakli").classList.toggle("active",key==="colakli");$("locGrossGerau").classList.toggle("active",key==="germany");
  $("locColakli").setAttribute("aria-pressed",String(key==="colakli"));$("locGrossGerau").setAttribute("aria-pressed",String(key==="germany"));
  set("headerPlace",next.flag+" "+next.full);set("heroPlace","JETZT IN "+next.name.toLocaleUpperCase("de-DE"));$("officialWeather").href=key==="colakli"?"https://www.mgm.gov.tr/":"https://www.dwd.de/";$("officialWeather").textContent=key==="colakli"?"MGM – offizieller Wetterdienst ↗":"DWD – offizieller Wetterdienst ↗";set("locationHint","Wetterdaten für "+next.name+" · Ortszeit "+(key==="colakli"?"Türkei":"Deutschland"));
- document.title="Wetterstudio · "+next.name;
+ document.title="Katrin's Wetterstudio · "+next.name;
  load();clock();
 }
 async function setGermanLocation(){const input=$("germanyCity").value.trim();if(!input){$("germanyCityStatus").textContent="Bitte einen deutschen Ort eingeben.";return;}const btn=$("setGermanyCity");btn.disabled=true;$("germanyCityStatus").textContent="Suche den Ort …";try{const url="https://geocoding-api.open-meteo.com/v1/search?name="+encodeURIComponent(input)+"&count=10&language=de&format=json";const data=await getJSON(url);const hit=(data.results||[]).find(x=>x.country_code==="DE");if(!hit)throw new Error("Kein passender Ort in Deutschland gefunden.");const city={name:hit.name,full:[hit.name,hit.admin1,"Deutschland"].filter(Boolean).join(" · "),lat:hit.latitude,lon:hit.longitude,tz:hit.timezone||"Europe/Berlin",marine:false,flag:"🇩🇪"};const germanyWasActive=activeLocation.flag==="🇩🇪";LOCATIONS.germany=city;localStorage.setItem("wsGermanyLocation",JSON.stringify(city));$("germanyButtonName").textContent=city.name;$("germanyCity").value=city.name;$("germanyCityStatus").textContent="Gespeichert: "+city.full;$("compareGross").parentElement.querySelector("span").textContent="🇩🇪 "+city.name;if(germanyWasActive){activeLocation=city;LAT=city.lat;LON=city.lon;TZ=city.tz;set("headerPlace",city.flag+" "+city.full);set("heroPlace","JETZT IN "+city.name.toLocaleUpperCase("de-DE"));load();clock();}loadCompare();}catch(e){$("germanyCityStatus").textContent=e.message||"Ort konnte nicht gefunden werden.";}finally{btn.disabled=false;}}

@@ -1,8 +1,10 @@
-WETTERSTUDIO – ULTIMATE EDITION VERSION 14
+WETTERSTUDIO ULTIMATE – VERSION 15
 
-Standorte: Çolaklı (Türkei) und Groß-Gerau (Deutschland).
-Enthält: Live-Wetter, Stunden- und 7-Tage-Prognose, Luftqualität, Meer-/Wellenwerte für Çolaklı, Wettermoderator mit sechs Wetterstimmungen, Teststudio, Strand-Checker (Orientierungswert), Wetter-TV, Wetterwarn-Schwellen, Tag-/Nachtmodus, Wetter-Rückblick und Design-Einstellungen.
+Standorte: Çolaklı (Türkiye) und Groß-Gerau (Deutschland).
+Neue Bereiche: Regenradar-Link (RainViewer extern), erweiterte Luftqualität und modellierter Pollenflug (Open-Meteo), Mondphasen-Näherung, Temperaturvergleich beider Standorte, lokale Browser-Benachrichtigungen bei Modell-Schwellenwerten (nur bei geöffneter App), 7-Tage-Wetterkalender. Das Meteorologische Lagezentrum wurde weiter nach unten verschoben.
 
-Installation: Alle Dateien in das Hauptverzeichnis des GitHub-Pages-Repositories hochladen und vorhandene gleichnamige Dateien ersetzen. Danach Commit changes.
+Alle Funktionen aus Version 14 bleiben enthalten.
 
-Datenquellen: Open-Meteo Forecast, Marine und Air Quality. Prognosewerte sind modelliert; automatische Schwellenwerte sind keine amtlichen Warnungen.
+Hinweise: Radar öffnet einen externen Dienst. Luftqualität und Pollen sind modellierte Werte und können regional fehlen. Wetteralarme sind keine amtlichen Warnungen; Benachrichtigungen benötigen Browserfreigabe und funktionieren nur, solange die App aktiv ist.
+
+Installation: Dateien ins Hauptverzeichnis des GitHub-Pages-Repositories laden und gleichnamige Dateien ersetzen.

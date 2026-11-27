@@ -8,3 +8,5 @@ Alle Funktionen aus Version 14 bleiben enthalten.
 Hinweise: Radar öffnet einen externen Dienst. Luftqualität und Pollen sind modellierte Werte und können regional fehlen. Wetteralarme sind keine amtlichen Warnungen; Benachrichtigungen benötigen Browserfreigabe und funktionieren nur, solange die App aktiv ist.
 
 Installation: Dateien ins Hauptverzeichnis des GitHub-Pages-Repositories laden und gleichnamige Dateien ersetzen.
+
+Version 19: Standortauswahl ist direkt auf der Hauptseite unter der Reiterleiste verfügbar. Der Reiter Vergleich ist für den Wettervergleich reserviert. Service-Worker-Cache auf v19 erhöht.

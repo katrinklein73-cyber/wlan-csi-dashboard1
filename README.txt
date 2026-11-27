@@ -12,3 +12,5 @@ Installation:
 4. Die PWA vollständig schließen und erneut öffnen bzw. die Website neu laden.
 
 Hinweis: Die GIFs animieren die jeweilige Figur durch dezente Bewegungsphasen. Die Accessoires sind im Motiv enthalten, bewegen sich aber nicht unabhängig voneinander.
+
+Version 12: Nachtmodus für den Wettermoderator ergänzt. Bei klarer/ruhiger Nacht erscheint ein Mondsymbol und die Figur erhält eine dezente Nacht-Darstellung. Regen, Sturm und Wind haben weiterhin Vorrang.

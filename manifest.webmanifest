@@ -1,11 +1,25 @@
 {
-  "name": "Wetterstudio – Ultimate Edition",
+  "name": "Wetterstudio Çolaklı – Wetter & Meer",
   "short_name": "Wetterstudio",
   "description": "Wetterstudio für Çolaklı und einen frei wählbaren deutschen Standort",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#061226",
   "theme_color": "#07152d",
-  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }

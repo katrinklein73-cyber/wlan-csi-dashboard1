@@ -45,3 +45,9 @@ VERSION 28 (28.11.2026)
 - Design: zuschaltbare größere Schrift.
 - Wetter-Rückblick: vergangene Modellwerte für Temperatur und Niederschlag.
 Hinweis: Modellhinweise und Strandbewertung ersetzen keine amtlichen Warnungen oder örtliche Badeaufsicht.
+
+
+VERSION 29 (28.11.2026)
+- Wetterticker: Wind-Symbol und Windgeschwindigkeit bleiben zusammen in einer Zeile.
+- Navigationsleiste: vollständig deckender Hintergrund in allen Design-Farbwelten, damit Inhalte beim Scrollen nicht durchscheinen.
+- Service-Worker-Cache auf v29 aktualisiert.

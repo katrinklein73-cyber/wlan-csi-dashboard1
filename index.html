@@ -74,6 +74,15 @@ body.theme-sunset .location-tile .tile-top,body.theme-forest .location-tile .til
 .radarFrame{width:100%;height:390px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#071a31}.radarFrame iframe{width:100%;height:100%;border:0}.personal-hidden{display:none!important}.personalizeList{display:grid;gap:8px}.personalizeItem{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px;background:#071a31;border:1px solid var(--line);border-radius:10px}.personalizeItem label{display:flex;align-items:center;gap:8px;flex:1}.personalizeItem button{padding:5px 9px}.installHero{display:flex;align-items:center;gap:12px}.installHero img{width:56px;height:56px}
 body.font-large{font-size:17px}body.font-large .muted,body.font-large .metric span,body.font-large .statrow span{font-size:1em!important}
 .quick-insight{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.insight{background:#071a31;border:1px solid #285d86;border-radius:12px;padding:10px}.insight span{display:block;color:var(--muted);font-size:11px}.insight b{font-size:17px}.history-bars{display:grid;gap:7px}.history-row{display:grid;grid-template-columns:70px 1fr 88px;gap:8px;align-items:center;font-size:12px}.history-track{height:9px;border-radius:8px;background:#173b5c;overflow:hidden}.history-track i{display:block;height:100%;background:linear-gradient(90deg,#35d9ff,#ffc857)}.beach-rating{font-size:12px;color:var(--gold);font-weight:700}.alert-list{display:grid;gap:7px;margin-top:10px}.alert-item{padding:8px 10px;border-radius:9px;background:#071a31;border-left:4px solid var(--green)}.alert-item.warn{border-color:var(--gold)}.alert-item.danger{border-color:#ff647d}@media(max-width:520px){.quick-insight{grid-template-columns:repeat(2,minmax(0,1fr))}.history-row{grid-template-columns:58px 1fr 75px}}
+
+/* Version 29: besser lesbarer Wetterticker und vollständig deckende Navigation */
+.tabbar{top:env(safe-area-inset-top,0px);background:#061226!important;box-shadow:0 8px 18px #0007;isolation:isolate}
+body.theme-sunset .tabbar{background:#24162a!important}
+body.theme-forest .tabbar{background:#071d1a!important}
+body.theme-lavender .tabbar{background:#1d1930!important}
+.tabpanel,.card[id],section[data-tab-panel]{scroll-margin-top:76px}
+.hour small:last-child{display:flex;align-items:center;justify-content:center;gap:4px;white-space:nowrap;font-size:12px;line-height:1.25;min-height:18px}
+
 </style>
 </head>
 <body>
@@ -133,7 +142,7 @@ body.font-large{font-size:17px}body.font-large .muted,body.font-large .metric sp
 <section data-tab-panel="settings" class="card full" id="personalizeCard"><h2>🧩 Persönliche Startseite</h2><p class="muted">Blende Karten aus oder ein und ändere ihre Reihenfolge. Deine Auswahl wird auf diesem Gerät gespeichert.</p><div id="personalizeList" class="personalizeList"></div></section>
 <section data-tab-panel="settings" class="card full"><h2>📲 Wetterstudio als Android-App</h2><p class="muted">Installiere das Wetterstudio auf deinem Startbildschirm – mit eigenem Symbol und ohne normale Browserleiste.</p><div class="actions"><button class="btn" id="install" type="button">＋ App installieren</button><button class="btn" id="installHelp" type="button">Installationshilfe</button></div><div id="installStatus" class="muted" style="font-size:12px;margin-top:8px">Wenn Chrome keine direkte Installation anbietet, findest du „App installieren“ oder „Zum Startbildschirm hinzufügen“ im Browser-Menü.</div></section>
 <section data-tab-panel="settings" class="card full"><h2>🛠️ Wetterstudio-Kontrollpult</h2><div class="actions"><button class="btn" id="refresh">↻ Jetzt aktualisieren</button><span class="muted" id="status" style="align-self:center">Automatische Aktualisierung alle 15 Minuten</span></div></section>
-<section data-tab-panel="settings" class="card full" id="aboutStudio"><h2>ℹ️ Über Katrin's Wetterstudio</h2><div class="statrow"><span>Installierte Programmversion</span><b>Version 28</b></div><div class="statrow"><span>Letztes Update</span><b>27.11.2026</b></div><p class="muted" style="font-size:12px;margin-bottom:0">Persönliches Wetterstudio von Katrin · Zwei Standorte, ein Wetterstudio.</p></section>
+<section data-tab-panel="settings" class="card full" id="aboutStudio"><h2>ℹ️ Über Katrin's Wetterstudio</h2><div class="statrow"><span>Installierte Programmversion</span><b>Version 29</b></div><div class="statrow"><span>Letztes Update</span><b>28.11.2026</b></div><p class="muted" style="font-size:12px;margin-bottom:0">Persönliches Wetterstudio von Katrin · Zwei Standorte, ein Wetterstudio.</p></section>
 </div>
 <div class="foot">Daten: Open-Meteo Wetter- und Marine-API · Modellprognosen, keine Messstation vor Ort. Meerwerte beziehen sich auf den nächstgelegenen verfügbaren Meeresmodellpunkt. <span id="stamp"></span></div>
 </main>

@@ -34,3 +34,14 @@ Version 26: Nacht-Symbole robust korrigiert. Der Tagesstatus wird numerisch ausg
 
 
 Version 27 (27.11.2026): In Einstellungen ganz unten wurde der Bereich 'Über Katrin's Wetterstudio' mit sichtbarer Programmversion und letztem Update ergänzt. Service-Worker-Cache auf v27 aktualisiert.
+
+
+VERSION 28 (28.11.2026)
+- Übersicht: kompakte Wetter-Kennzahlen für Regen, UV, Tageslicht, Gefühl und Windböen.
+- Wetterwarnungen: zusätzliche 7-Tage-Modellhinweise mit abgestuften Hinweisen.
+- Strand-Checker: Wellen-/Wassertemperatur und verständlichere Badeorientierung ergänzt.
+- Wettermoderator: zusätzliche wetterabhängige Sprüche.
+- Standortvergleich: Wind, Regenrisiko und gefühlte Temperatur für beide Orte.
+- Design: zuschaltbare größere Schrift.
+- Wetter-Rückblick: vergangene Modellwerte für Temperatur und Niederschlag.
+Hinweis: Modellhinweise und Strandbewertung ersetzen keine amtlichen Warnungen oder örtliche Badeaufsicht.

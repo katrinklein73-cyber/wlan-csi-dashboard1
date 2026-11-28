@@ -61,3 +61,15 @@ VERSION 30 (28.11.2026)
 - Kleidungsempfehlung aus Temperatur, Wind, Regenwahrscheinlichkeit und UV-Modellwerten
 - Windgeschwindigkeit im Stunden-Wetterticker jetzt ausdrücklich mit km/h
 - Service-Worker-Cache auf Version 30 aktualisiert
+
+
+VERSION 30 – ERWEITERUNGSPAKET
+- Wetter-Zeitmaschine: Stunden-Slider für die verfügbare Stundenprognose.
+- Wetter-Welt: zusätzliche Beispielorte mit aktuellen Open-Meteo-Modellwerten.
+- Persönliche Profile: Strandtag, Zuhause und Weltentdecker; Auswahl wird lokal gespeichert.
+- Goldene Stunde: vereinfachte Zeitfenster aus Sonnenaufgang und Sonnenuntergang.
+- Wetter-TV auf Abruf: aktueller Kurzbericht per Knopfdruck.
+- Wettertagebuch: lokale Tages-Schnappschüsse (bis zu 60 Einträge).
+- Einstellungen sichern: Export ausgewählter Einstellungen als JSON-Datei.
+- Radarzentrum: externer RainViewer-Link; keine eingebettete interaktive Radaransicht.
+Hinweise: Wetter-Welt und Zeitmaschine zeigen Open-Meteo-Modellprognosen, keine Live-Messungen. Profile steuern die persönliche Auswahl/Ansicht, sie verändern keine Wetterdaten.

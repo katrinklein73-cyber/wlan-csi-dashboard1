@@ -51,3 +51,13 @@ VERSION 29 (28.11.2026)
 - Wetterticker: Wind-Symbol und Windgeschwindigkeit bleiben zusammen in einer Zeile.
 - Navigationsleiste: vollständig deckender Hintergrund in allen Design-Farbwelten, damit Inhalte beim Scrollen nicht durchscheinen.
 - Service-Worker-Cache auf v29 aktualisiert.
+
+
+VERSION 30 (28.11.2026)
+- Vier zusätzliche Farbwelten: Neon Galaxy, Ocean Blue, Emerald Gold und Sunset Coral
+- Fünf Darstellungsstile: Klassisch, Modern Clean, Futuristic Glass, Weather TV und Luxury Glass
+- Heller Modus, eigene Akzentfarbe und animierte Wetterkulisse
+- Erweiterte persönliche Startseite mit Kleidungsempfehlung und konfigurierbaren Karten
+- Kleidungsempfehlung aus Temperatur, Wind, Regenwahrscheinlichkeit und UV-Modellwerten
+- Windgeschwindigkeit im Stunden-Wetterticker jetzt ausdrücklich mit km/h
+- Service-Worker-Cache auf Version 30 aktualisiert
